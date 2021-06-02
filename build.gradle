@@ -15,13 +15,13 @@
  */
 
 buildscript {
-    ext.kotlin_version = '1.4.32'
-    ext.compose_version = '1.0.0-beta07'
+    ext.kotlin_version = '1.5.10'
+    ext.compose_version = '1.0.0-beta08'
     ext.coroutines_version = '1.4.2'
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -37,7 +37,7 @@ plugins {
 subprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     apply plugin: 'com.diffplug.spotless'
